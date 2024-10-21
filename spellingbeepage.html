@@ -120,6 +120,25 @@
 				.footer-column{
 					list-style: none;
 				}
+
+                .carousel-item img {
+                width: 100%;          /* Ensures the image takes the full width */
+             height: auto;        /* Maintains aspect ratio */
+             object-fit: cover;   /* Ensures the image covers the carousel area */
+        }
+
+                .carousel-caption {
+                    text-align: center;   /* Center align the text in the caption */
+                    bottom: 20px;        /* Adjust the vertical position as needed */
+                }
+
+                @media (max-width: 576px) {
+                    .carousel-caption {
+                        font-size: 14px; /* Adjust caption text size for small screens */
+                        bottom: 10px;    /* Adjust position if needed */
+                    }
+                }
+
         
         </style>
 </head>
